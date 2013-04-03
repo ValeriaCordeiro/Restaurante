@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @motoboy.nome %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @motoboy.telefone %>
+</p>
+
+
+<%= link_to 'Edit', edit_motoboy_path(@motoboy) %> |
+<%= link_to 'Back', motoboys_path %>
