@@ -1,0 +1,27 @@
+<h1>Listing cardapios</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Descricao</th>
+    <th>Preco</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cardapios.each do |cardapio| %>
+  <tr>
+    <td><%= cardapio.nome %></td>
+    <td><%= cardapio.descricao %></td>
+    <td><%= cardapio.preco %></td>
+    <td><%= link_to 'Show', cardapio %></td>
+    <td><%= link_to 'Edit', (edit_cardapio_path cardapio) %></td>
+    <td><%= link_to 'Excluir', cardapio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cardapio', new_cardapio_path %>

@@ -1,0 +1,8 @@
+= semantic_form_for [@cardapio] do |form|
+  = form.input :nome, :label => 'Nome' 
+  = form.input :descricao, :label => 'Descricao'
+  = form.input :preco, :label => 'Preco'
+  = form.submit 'Salvar'
+
+
+

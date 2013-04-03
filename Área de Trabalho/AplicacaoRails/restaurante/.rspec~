@@ -1,2 +1,4 @@
 --color
 --format nested
+-p
+--fail-fast
