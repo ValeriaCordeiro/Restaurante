@@ -1,4 +1,7 @@
 Restaurante::Application.routes.draw do
+  resources :clientes
+
+
   resources :cardapios
 
 
