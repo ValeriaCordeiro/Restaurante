@@ -2,3 +2,4 @@
 --format nested
 -p
 --fail-fast
+--require spec_helper
