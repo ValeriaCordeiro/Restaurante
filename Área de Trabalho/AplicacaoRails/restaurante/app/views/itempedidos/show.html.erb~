@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Quantidade:</b>
+  <%= @itempedido.quantidade %>
+</p>
+
+<p>
+  <b>Pedido:</b>
+  <%= @itempedido.pedido.data %>
+</p>
+
+<p>
+  <b>Cardapio:</b>
+  <%= @itempedido.cardapio.nome %>
+</p>
+
+
+<%= link_to 'Edit', edit_itempedido_path(@itempedido) %> |
+<%= link_to 'Back', itempedidos_path %>
