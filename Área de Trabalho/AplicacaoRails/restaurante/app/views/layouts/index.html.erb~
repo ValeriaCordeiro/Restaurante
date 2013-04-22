@@ -22,9 +22,9 @@ Released   : 20120807
 </head>
 <body>
 
-<div id="content">
-	<div id="colOne">
-		<h2>Menu</h2>
+<div id="wrapper">
+	<div id="menu">
+
 		<ul>
 			       <li><%= link_to 'Cliente',clientes_path %></li>
 			       <li><%= link_to 'Motoboy',motoboys_path %></li>
@@ -41,9 +41,9 @@ Released   : 20120807
 		
 
 		<div class="post"><img src="assets/img4.jpg" alt="" width="120" height="160" class="float" />
+                
 		
-			
-                    <%= yield %>
+			<%= yield %>
 		<div style="clear: both;">&nbsp;</div>
         </div>
 	<div id="footer">

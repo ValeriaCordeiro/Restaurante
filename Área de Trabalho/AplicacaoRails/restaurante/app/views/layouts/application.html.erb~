@@ -41,7 +41,7 @@ Released   : 20120807
 		
 
 		<div class="post"><img src="assets/img4.jpg" alt="" width="120" height="160" class="float" />
-		
+		<div class="post"><img src="assets/img2.jpg" alt="" width="120" height="160" class="float" />
 			
                     <%= yield %>
 		<div style="clear: both;">&nbsp;</div>

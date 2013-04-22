@@ -22,9 +22,9 @@ Released   : 20120807
 </head>
 <body>
 
-<div id="content">
-	<div id="colOne">
-		<h2>Menu</h2>
+<div id="wrapper">
+	<div id="menu">
+
 		<ul>
 			       <li><%= link_to 'Cliente',clientes_path %></li>
 			       <li><%= link_to 'Motoboy',motoboys_path %></li>
@@ -36,14 +36,37 @@ Released   : 20120807
 	<!-- end #menu -->
 <div id="header">
 		<div id="logo">
-		
+		<h1>Restaurante Delivery</h1>
 		<h1><b href="/">Restaurante Delivery</b>&nbsp;&nbsp;&nbsp;<span></span></h1>
 		
+                     <p>By Valeria Cordeiro</p>
+
+
+
+                     <h2>Seja Bem-Vindo!</h2>
 
 		<div class="post"><img src="assets/img4.jpg" alt="" width="120" height="160" class="float" />
+                <h1>Clientes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Endereco</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+</table>
+
+<br />
+
+<a href="/clientes/new">New Cliente</a>
+<div class="post"><img src="assets/img4.jpg" alt="" width="120" height="160" class="float" />
+
 		
-			
-                    <%= yield %>
+			<%= yield %>
 		<div style="clear: both;">&nbsp;</div>
         </div>
 	<div id="footer">

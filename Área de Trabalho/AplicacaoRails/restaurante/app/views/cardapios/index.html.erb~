@@ -1,4 +1,4 @@
-<h1>Listing cardapios</h1>
+<h1>Lista de Cardapios</h1>
 
 <table>
   <tr>
@@ -16,7 +16,7 @@
     <td><%= cardapio.descricao %></td>
     <td><%= cardapio.preco %></td>
     <td><%= link_to 'Show', cardapio %></td>
-    <td><%= link_to 'Edit', edit_cardapio_path cardapio %></td>
+    <td><%= link_to 'Edit', (edit_cardapio_path cardapio) %></td>
     <td><%= link_to 'Excluir', cardapio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
